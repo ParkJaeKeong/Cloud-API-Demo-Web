@@ -36,11 +36,11 @@ export interface DrcEnterBody {
 }
 
 export interface DrcEnterResp {
-  sub: string[] // 需要订阅接收的topic
-  pub: string[] // 推送的topic地址
+  sub: string[] // 需要订阅接收的topic 구독해야할 토픽
+  pub: string[] // 推送的topic地址  푸시할 도픽 주소
 }
 
-// 进入飞行控制 （建立drc连接&获取云控控制权）
+// 进入飞行控制 （建立drc连接&获取云控控制权） 비행 제어 시작 (drc 연결 및 클라우드 제어 권한 획득)
 export async function postDrcEnter (body: DrcEnterBody): Promise<IWorkspaceResponse<DrcEnterResp>> {
   const resp = await request.post(`${DRC_API_PREFIX}/workspaces/${workspaceId}/drc/enter`, body)
   return resp.data
@@ -51,7 +51,7 @@ export interface DrcExitBody {
   dock_sn: string
 }
 
-// 退出飞行控制 （退出drc连接&退出云控控制权）
+// 退出飞行控制 （退出drc连接&退出云控控制权）비행 제어 종료(drc 연결 해제 및 클라우드 제어 권한 반환)
 export async function postDrcExit (body: DrcExitBody): Promise<IWorkspaceResponse<null>> {
   const resp = await request.post(`${DRC_API_PREFIX}/workspaces/${workspaceId}/drc/exit`, body)
   return resp.data

@@ -63,9 +63,9 @@ export const noDebugCmdList: DeviceCmdItem[] = [
 export const cmdList: DeviceCmdItem[] = [
   {
     // iconName: ,
-    label: '机场系统',
+    label: '机场系统(독Reboot)',
     status: '工作中',
-    operateText: '重启',
+    operateText: '重启(Restart)',
     cmdKey: DeviceCmd.DeviceReboot,
     func: 'deviceReboot',
     loading: false,
@@ -74,7 +74,7 @@ export const cmdList: DeviceCmdItem[] = [
     // statusColor: '',
   },
   {
-    label: '飞行器',
+    label: '飞行器(드론On)',
     status: '关机',
     operateText: '开机',
     cmdKey: DeviceCmd.DroneOpen,
@@ -83,7 +83,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '舱盖',
+    label: '舱盖(커버)',
     status: '关',
     operateText: '开启',
     cmdKey: DeviceCmd.CoverOpen,
@@ -92,7 +92,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '推杆',
+    label: '推杆(퍼터)',
     status: '闭合',
     operateText: '展开',
     cmdKey: DeviceCmd.PutterOpen,
@@ -101,7 +101,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '充电状态',
+    label: '充电状态(충전)',
     status: '未充电',
     operateText: '充电',
     cmdKey: DeviceCmd.ChargeOpen,
@@ -110,7 +110,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '机场存储',
+    label: '机场存储(독Format)',
     status: '--',
     operateText: '格式化',
     cmdKey: DeviceCmd.DeviceFormat,
@@ -118,7 +118,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '飞行器存储',
+    label: '飞行器存储(드론Format)',
     status: '--',
     operateText: '格式化',
     cmdKey: DeviceCmd.DroneFormat,
@@ -126,7 +126,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '补光灯',
+    label: '补光灯(보조라이트)',
     status: '关',
     operateText: '打开',
     cmdKey: DeviceCmd.SupplementLightOpen,
@@ -135,7 +135,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '机场声光报警',
+    label: '机场声光报警(경보)',
     status: '关',
     operateText: '打开',
     cmdKey: DeviceCmd.AlarmStateSwitch,
@@ -144,7 +144,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '机场电池存储模式',
+    label: '机场电池存储模式(독BatteryStoreMode)',
     status: '计划',
     operateText: '应急',
     cmdKey: DeviceCmd.BatteryStoreModeSwitch,
@@ -153,7 +153,7 @@ export const cmdList: DeviceCmdItem[] = [
     loading: false,
   },
   {
-    label: '飞机电池保养',
+    label: '飞机电池保养(드론배터리유지보수)',
     status: '--',
     operateText: '保养',
     cmdKey: DeviceCmd.DroneBatteryModeSwitch,
@@ -163,7 +163,7 @@ export const cmdList: DeviceCmdItem[] = [
     disabled: true,
   },
   {
-    label: '4g 增强',
+    label: '4g 增强(강화)',
     status: '--',
     operateText: '开启',
     cmdKey: DeviceCmd.SdrWorkModeSwitch,
